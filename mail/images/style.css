@@ -1,0 +1,153 @@
+/* 基本設定 */
+BODY {
+  margin-top: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+TD {
+	font-size : 12px;
+	color: #333333;
+}
+BLOCKQUOTE { 
+	margin-left: 36px;
+}
+
+/* リンク */
+A:link {
+	COLOR: #0000FF;
+	FONT-STYLE: normal;
+	text-decoration: none;
+}
+A:visited {
+	COLOR: #0000FF;
+	FONT-STYLE: normal;
+	text-decoration:none;
+}
+A:hover {
+	COLOR: #FFFFFF;
+	font-style: normal;
+	background-color: #FF9900;
+	text-decoration: none;
+}
+
+
+/* 基本背景色 */
+.mainbgcolor {
+	background-color: #FFFEF9;
+}
+
+
+/* フォーム （停止中）
+INPUT[type="text"], INPUT[type="password"], TEXTAREA {
+	background-color:white;
+}
+INPUT[type="text"]#rtfield {
+	background-color:#FFCCCC;
+}
+INPUT[type="text"]:hover, INPUT[type="password"]:hover, INPUT[type="text"]#rtfield:hover, textarea:hover {
+	background-color:#FFFFCC;
+}
+*/
+
+
+/* メニュー 
+TD#mainmenu1 a 	{
+	background-color:trasnparent; 
+	display: block;
+	margin: 0; 
+	padding:0px; 
+	font-size:12px;
+	font-weight:normal; 
+}
+
+TD#mainmenu1 a:hover {
+	text-decoration:none;
+	background-color:#DDE4FF;
+	color:#333333;
+}
+
+.mainmenu1 {
+	background-color: #B7DBDB;
+}
+.mainmenu2 {
+	background-color: #FFCCCC;
+}
+*/
+
+/* サブメニュー */
+TD#submenu a {
+	background-color:trasnparent; 
+	display: block;
+	margin: 0; 
+	padding:2px; 
+	font-size:12px;
+	font-weight:normal; 
+}
+TD#submenu a:hover {
+	text-decoration:none;
+	background-color:#DDE4FF;
+	color:#333333;
+}
+
+/* コメント、注釈 */
+.notes1 {
+	color: #996633;
+}
+.notes2 {
+	color: #CC6666;
+}
+
+/* 見出し背景 */
+.bgcolor1 {
+	background-color: #F7F5E8;
+	color: #663333;
+}
+.bgcolor2 {
+	background-color: #ECE9D8;
+}
+.bgcolor3 {
+	background-color: #F7F9F7;
+}
+.bgcolor4 {
+	background-color: #CCCCCC;
+}
+.bgcolor5 {
+	background-color: #FFFFFF;
+}
+.title1 {
+	background-color: #B7DBDB;
+}
+.title2 {
+	background-color: #FFCCCC;
+}
+.data1 {
+	background-color: #EAF4F4;
+}
+.data2 {
+	background-color: #F4EAEA;
+}
+
+/* 共通テーブルボーダー */
+.bodercolor1 {
+	background-color: #666666;
+}
+/* メインメニュー用ボーダー */
+.bodercolor2 {
+	background-color: #ECE9D8;
+}
+
+/* テンプレートロゴ背景 */
+.tmp_bgcolor1 {
+	background-color: #FFFFFF;
+}
+/* 共通テンプレートメニュー上下 */
+.tmp_bgcolor2 {
+	background-color: #333333;
+}
+/* テンプレート外枠 */
+.tmp_bgcolor3 {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+

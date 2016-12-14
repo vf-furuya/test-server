@@ -1,0 +1,4 @@
+AddDefaultCharset S-JIS
+
+php_value default_charset utf-8
+AddType text/plain;charset=UTF-8 .csv

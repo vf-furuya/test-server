@@ -1,0 +1,57 @@
+/* シミュレーション用CSS */
+
+/* エラー */
+.err-description .errorBox {
+	padding:10px 19px 17px 20px;
+	font-size: 12px;
+	font-weight:bold;
+	color: red;
+	line-height:22px;
+	
+	width:auto;
+margin:20px 0 20px 0;
+padding:16px 20px;
+border:3px dashed #ff0000;
+list-style:none;
+
+
+}
+
+
+ul.sim_error {
+width:auto;
+margin:0 0 20px 0;
+padding:16px 20px;
+border:3px dashed #ff0000;
+list-style:none;
+}
+
+	ul.sim_error li {
+	font-size:14px;
+	font-weight:bold;
+	line-height:22px;
+	color:#ff0000;
+	margin:0;
+	padding:0;
+	}
+
+
+/* 読み込み中 */
+div#loader {
+	width: 648px;
+	height: 430px;
+	display: none;
+	overflow: auto;
+	position: absolute;
+	top: 394px;
+	background: url(files/spinner.gif) no-repeat center center;
+	
+}
+.submit_button .btn {
+	background-image:url(../../images/sim_submit.jpg);
+	padding:6px 0 0 0;
+	width:402px;
+	height:60px;
+	text-align:center;
+	border: none;
+	}

@@ -1,0 +1,26 @@
+BODY {
+  margin-top: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+TD {
+  font-size : 13px;
+}
+
+A:link { COLOR: #FFFFFF; FONT-STYLE: normal; text-decoration:none; }
+A:visited { COLOR: #FFFFFF; FONT-STYLE: normal; text-decoration:none; }
+A:HOVER { background-color : #009f70; COLOR: #FFFFFF; font-style: normal; }
+
+.white{
+  color : white;
+  font-size : 12px;
+}
+.fontsize14px{
+  font-size : 14px;
+  
+}
+.fontsize12px{
+  font-size : 12px;
+}

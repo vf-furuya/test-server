@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="description" content="借入可能額シミュレーション,キャッシングEXは今日中に借入れできる銀行系・消費者金融系キャッシングを比較、検索できるサイトです。" />
+<meta name="keywords" content="借入可能額シミュレーション,キャッシングEX,即日融資,スピードキャッシング " />
+<title>借入可能額シミュレーション | キャッシングEX</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body id="pagetop">
+
+<!--#include virtual="/header.html" -->
+
+<div id="container">
+<div class="main_area">
+<h2 class="tt">借入可能額シミュレーション</h2>
+<div class="text_area">
+<p>今月はあとどれくらい足りない？自分はどれぐらい借りられる？<br>
+</p>
+<p>そんなときは借入可能額シミュレーションを使って、現状で借りられる金額を把握しておくと、スムーズにキャッシング先を絞ることができます。ポイントはシュミレーション情報を忘れずに、希望する限度額を欲張らず、<br>
+  希望する限度額内、利用日数、提出書類などの手続き方法からキャッシング先を選ぶことです。</p>
+</div>
+<p class="sst_simulation">各項目に入力してください</p>
+<ul class="sim_error">
+<li>職業が選択されていません。</li>
+<li>昨年の年収が入力されていません。</li>
+<li>利用目的が入力されていません。</li>
+<li>現在のキャッシング利用状況が入力されていません。</li>
+<li>融資希望額が入力されていません。</li>
+</ul>
+<form class="simulation_area">
+<table width="640" border="0" cellpadding="0" cellspacing="1" bgcolor="#dcdcdc">
+<tr>
+<th width="165">職業&nbsp;<span class="red">※</span></th>
+<td>
+<table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table_c">
+<tr>
+<td><label for="job-1"><input id="job-1" type="radio" class="radio" name="job" value="" />自営業・会社役員</label></td>
+</tr>
+<tr>
+<td><label for="job-2"><input id="job-2" type="radio" class="radio" name="job" value="" />会社員</label></td>
+</tr>
+<tr>
+<td><label for="job-3"><input id="job-3" type="radio" class="radio" name="job" value="" />派遣社員</label></td>
+</tr>
+<tr>
+<td><label for="job-4"><input id="job-4" type="radio" class="radio" name="job" value="" />主婦</label></td>
+</tr>
+<tr>
+<td><label for="job-5"><input id="job-5" type="radio" class="radio" name="job" value="" />学生</label></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th rowspan="2">昨年の年収&nbsp;<span class="red">※</span></th>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table">
+<tr>
+<td width="100">本人の年収</td>
+<td><input type="text" name="textfield" class="normal_txtfield">万円</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table">
+<tr>
+<td width="100">配偶者の年収</td>
+<td><input type="text" name="textfield" class="normal_txtfield">万円</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th>利用目的&nbsp;<span class="red">※</span></th>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table_c">
+<tr>
+<td width="160"><label for="use-1"><input id="use-1" type="radio" class="radio" name="use" value="" />生活費</label></td>
+<td><label for="use-2"><input id="use-2" type="radio" class="radio" name="use" value="" />医療費</label></td>
+</tr>
+<tr>
+<td><label for="use-3"><input id="use-3" type="radio" class="radio" name="use" value="" />交際費</label></td>
+<td><label for="use-4"><input id="use-4" type="radio" class="radio" name="use" value="" />教育費</label></td>
+</tr>
+<tr>
+<td><label for="use-5"><input id="use-5" type="radio" class="radio" name="use" value="" />レジャー</label></td>
+<td><label for="use-6"><input id="use-6" type="radio" class="radio" name="use" value="" />おまとめ</label></td>
+</tr>
+<tr>
+<td><label for="use-7"><input id="use-7" type="radio" class="radio" name="use" value="" />冠婚葬祭</label></td>
+<td><label for="use-8"><input id="use-8" type="radio" class="radio" name="use" value="" />車関係</label></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th rowspan="2">現在のキャッシング<br>
+利用状況&nbsp;<span class="red">※</span></th>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table">
+<tr>
+<td width="100">現在の借入額</td>
+<td><input type="text" name="textfield" class="normal_txtfield">
+万円</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table">
+<tr>
+<td width="100">借入件数</td>
+<td><select name="select" class="normal_select"><option>1～10</option></select>件</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th>融資希望額&nbsp;<span class="red">※</span></th>
+<td><table width="0" border="0" cellspacing="0" cellpadding="0" class="inner_table">
+<tr>
+<td><input type="text" name="textfield" class="normal_txtfield">万円</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<div class="submit_sim"><input type="image" src="../images/sim_submit.jpg" alt="シミュレーション結果を表示"></div>
+</form>
+<div class="sim_result">
+<p class="sst_sim_result"><img src="/images/sst_sim_result.jpg" alt="シミュレーション結果" width="200" height="37"></p>
+<p class="sim_result_price">10</p>
+<div class="sim_result_txt"><img src="/images/sim_result_txt_01.png" alt="ご融資可能と思われます" width="405" height="102"></div>
+<p class="sim_result_stxt">ご入力いただいた情報を元に集計した当サイトの結果には、実際のご融資と若干の誤差がある場合がございます。</p>
+</div>
+<div class="sim_result">
+<p class="sst_sim_result"><img src="/images/sst_sim_result.jpg" alt="シミュレーション結果" width="200" height="37"></p>
+<p class="sim_result_price">0</p>
+<div class="sim_result_txt"><img src="/images/sim_result_txt_02.png" alt="該当するカードはありませんでした。条件を変えて再度検索してください。" width="405" height="102"></div>
+<p class="sim_result_stxt">ご入力いただいた情報を元に集計した当サイトの結果には、実際のご融資と若干の誤差がある場合がございます。</p>
+</div>
+<div class="sim_result">
+<p class="sst_sim_result"><img src="/images/sst_sim_result.jpg" alt="シミュレーション結果" width="200" height="37"></p>
+<p class="sim_result_price">100</p>
+<div class="sim_result_txt"><img src="/images/sim_result_txt_03.png" alt="ご現在の条件では下記のカードローンが良いと思われます。" width="405" height="102"></div>
+<p class="sim_result_stxt">ご入力いただいた情報を元に集計した当サイトの結果には、実際のご融資と若干の誤差がある場合がございます。</p>
+</div>
+<!--#include virtual="/site/aiful.html" -->
+<!-- /div.main_area --></div>
+<!--#include virtual="/sidemenu.html" -->
+<div class="page_scroll"><a href="#pagetop"><img src="/images/pagescroll_off.gif" alt="ページの先頭へ" width="130" height="30" border="0"></a></div>
+<!-- /div.container --></div>
+
+<!--#include virtual="/footer.html" -->
+
+</body>
+</html>

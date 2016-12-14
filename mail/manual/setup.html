@@ -1,0 +1,417 @@
+<!-- saved from url=(0013)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="robots" content="noindex,nofollow" />
+<title>楽メールPRO - 配信設定マニュアル -</title>
+<link href="images/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style3 {color: #000099}
+.style1 {	color: #990000;
+	text-decoration: none;
+}
+.white {	font-size : 12px;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+.style4 {text-decoration: none}
+-->
+</style>
+</head>
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="1" rowspan="2" bgcolor="#333333"><img src="images/spacer01.gif" width="1" height="1" /></td>
+    <td><table width="800" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="5" height="60" bgcolor="#FED52F">&nbsp;</td>
+          <td bgcolor="#FED52F"><img src="images/rakumaillogo.jpg" width="364" height="50" border="0" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="#333333"><img src="images/spacer01.gif" width="1" height="1" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="mainbgcolor"><br />
+            <br />
+            <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td bgcolor="#666666"><table width="100%" border="0" align="center" cellpadding="5" cellspacing="1">
+                    <tr>
+                      <td class="title2"><font size="4"><strong>ご注意</strong></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#FFFFFF" class="data2">■このマニュアルは、配信設定用のマニュアルです。<br>
+                        楽メールオフィシャルサイトの「システム設置マニュアル」が導入順に記述されていて便利です。<br>
+                        そちらもあわせてご確認ください。<br>
+                        <a href="http://www.raku-mail.com/firststep/index.htm" target="_blank">http://www.raku-mail.com/firststep/index.htm</a><br>
+                        <br>
+                        ■ステップメールを自動化する場合、自動配信タグによる自動配信設定が必要です。<br>
+                        自動配信を行う場合、CGIは何らかの形でシステムを起動させ、<br>
+                        配信予定メールのチェック・送信をする必要があります。<br>
+                        サイトをお持ちの方は、自動配信タグをホームページ上に設置することで、アクセス毎に自動配信のチェックが行われます。<br>
+                        サイトをお持ちで1日に訪問者が1名以上ある場合、この方法をお奨めいたします。<br>
+                        詳しくは以下のファイルをご参照ください。<br>
+                        <a href="http://www.raku-mail.com/manual/autosendtag.pdf" target="_blank">http://www.raku-mail.com/manual/autosendtag.pdf</a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <br />
+            <br />
+            <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td bgcolor="#666666"><table width="100%" border="0" align="center" cellpadding="5" cellspacing="1">
+                    <tr>
+                      <td class="title1"><font size="4"><strong>配信専用ページの設定方法</strong></font></td>
+                    </tr>
+                    <tr>
+                      <td class="data1">配信専用ページを作成して、管理画面にアクセスすることなくメールを配信したい場合は<br>
+                        以下方法で行ってください。<br>
+                        <br>
+                        ログイン後に表示されるトップページに表示される「自動配信タグ」を利用いただけます。<br>
+                        <br>
+                        送信方式によって送信数や動作が変わります。<br>
+                        詳しくは<span class="style3">管理画面【送信方式設定】</span>をご覧ください。 <br>
+                        <br>
+                        送信方式設定が「分割で送信する」の場合は一日に<strong>一度のアクセス</strong>で<strong>すべてのメール</strong>を配信します。<br>
+                        送信方式設定が「アクセス毎に送信する」の場合は<strong>一度のアクセス</strong>で<strong>指定された件数</strong>を配信します。</td>
+                    </tr>
+                    <tr>
+                      <td class="data1"><table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼JavaScriptのプリロードを利用する　<span class="notes1">(推奨)</span></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">任意のページの&lt;HEAD&gt;&lt;/HEAD&gt;内にJavaScript構文を埋め込んでこのページにアクセスが<br>
+                                    あるたびに、メール配信を実行します。<br>
+                                    <br>
+                                    <table border="0" cellpadding="1">
+                                      <tr>
+                                        <td bgcolor="#999999"><table border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                              <td bgcolor="#FFFFFF">&lt;script language="JavaScript"&gt;&lt;!--<br>
+                                                myIMG = new Image();<br>
+                                                myIMG.src = '<span class="style1"><strong>http://www.*****/distribute/cgi-bin/send.cgi?run</strong></span>';<br>
+                                                // --&gt;&lt;/script&gt;</td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table>
+                                    <span class="style1"><strong>太字</strong></span>の部分は「<span class="style1">send.cgi</span>」のURLを指定します<br>
+                                    ※.cgi<span class="style3"><strong>?run</strong>を忘れずに記述してください。</span></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼ハイパーリンクを利用する</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">任意のページに「配信専用リンク」を作成しアクセス毎にメールを配信したい場合は<br>
+                                    以下のリンクを利用してください。 <br>
+                                    <br>
+                                    <table border="0" cellpadding="1">
+                                      <tr>
+                                        <td bgcolor="#999999"><table border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                              <td bgcolor="#FFFFFF">&lt;a href="<span class="style1"><strong>http://www.*****/distribute/cgi-bin/send.cgi</strong></span>"&gt;任意&lt;/a&gt;</td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table>
+                                    <span class="style1"><strong>太字</strong></span>の部分は「<span class="style1">send.cgi</span>」のURLを指定します。</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼IMGタグを利用する</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">任意のページで画像の表示によってアクセス毎にメールを配信したい場合は<br>
+                                    以下の様にIMGタグを貼り付けてください。<br>
+                                    <span class="style1">※送信方式設定が「分割で送信する」に設定されている場合、画像は表示されません。</span><br>
+                                    <br>
+                                    <table border="0" cellpadding="1">
+                                      <tr>
+                                        <td bgcolor="#999999"><table border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                              <td bgcolor="#FFFFFF">&lt;img src="<span class="style1"><strong>http://www.*****/distribute/cgi-bin/send.cgi?run</strong></span>"&gt;</td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table>
+                                    <span class="style1"><strong>太字</strong></span>の部分は「<span class="style1">send.cgi</span>」のURLを指定します。<br>
+                                    ※.cgi<span class="style3"><strong>?run</strong>を忘れずに記述してください。<br>
+                                    </span><br></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td bgcolor="#666666"><table width="100%" border="0" align="center" cellpadding="5" cellspacing="1">
+                    <tr>
+                      <td class="title1"><font size="4"><strong>ご利用サーバーでの制限</strong></font></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#FFFFFF" class="data1">「楽メール」ではサーバー上ののsendmailというソフトウェアを利用いたします。<br>
+                        ご利用のサーバーでsendmailの使用に特別な制限がある場合、<br>
+                        <strong>「楽メール」ログイン後メニュー「送信方式設定」</strong>で制限に関する設定を行わないと正常にメールが送信できない場合があります。<br>
+                        制限に関して不明な点がございましたら、ご利用サーバーのサポートにお問合せください。</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#FFFFFF" class="data1">送信方式を<strong>「アクセス毎に送信」</strong>に設定している場合、一度のアクセスによって配信されるメール件数は最大で「 200 」となっていますので、システム全体の登録人数（顧客など）が多い場合一度のアクセスではすべてのメールが配信できない場合があります。その場合は一日に数回アクセスするようにしてください。<br>
+                        <br>
+                        <table width="320" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td width="20">&nbsp;</td>
+                            <td width="300">例）１回の送信数が100通の場合</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td><table width="300" border="1" cellpadding="5" cellspacing="1" bordercolor="#CCCCCC">
+                                <tr>
+                                  <td width="150" align="center" bgcolor="#D7EBFF"><strong>登録人数</strong></td>
+                                  <td width="150" align="center" bgcolor="#D7EBFF"><strong>必要アクセス数</strong></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">1～100</td>
+                                  <td align="center" bgcolor="#FFFFFF">1</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">101～200</td>
+                                  <td align="center" bgcolor="#FFFFFF">2</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">201～300</td>
+                                  <td align="center" bgcolor="#FFFFFF">3</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">301～400<br>
+                                    ・ <br>
+                                    ・ <br></td>
+                                  <td align="center" bgcolor="#FFFFFF">4<br>
+                                    ・<br>
+                                    ・ </td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="320" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td width="20">　</td>
+                            <td width="300">例）１回の送信数が50通の場合</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td><table width="300" border="1" cellpadding="5" cellspacing="1" bordercolor="#CCCCCC">
+                                <tr bgcolor="#D7EBFF">
+                                  <td width="150" align="center"><strong>登録人数</strong></td>
+                                  <td width="150" align="center"><strong>必要アクセス数</strong></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">1～50</td>
+                                  <td align="center" bgcolor="#FFFFFF">1</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">51～100</td>
+                                  <td align="center" bgcolor="#FFFFFF">2</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">101～150</td>
+                                  <td align="center" bgcolor="#FFFFFF">3</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" bgcolor="#FFFFFF">151～200<br>
+                                    ・ <br>
+                                  ・ <br></td>
+                                  <td align="center" bgcolor="#FFFFFF">4<br>
+                                    ・<br>
+                                    ・ </td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table border="0" cellpadding="1">
+                                      <tr>
+                                        <td bgcolor="#999999"><table border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                              <td bgcolor="#FFFFFF"><font color="#666666">★</font><font color="#666666">ご注意<span class="bgcolor2"></span><br>
+                                              <br>
+                                                「ステップメール」と「日付指定メール」はそれぞれ別にアクセスが必要なため、<br>
+                                              双方同時配信の際には必要アクセス数が２倍必要になります。</font></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td bgcolor="#666666"><table width="100%" border="0" align="center" cellpadding="5" cellspacing="1">
+                    <tr>
+                      <td class="title2"><font size="4"><strong>クーロンの設定方法 (必要なユーザーのみ)</strong></font></td>
+                    </tr>
+                    <tr>
+                      <td class="data2"><table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼概要</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">cron（クーロン）とは、ジョブ（スクリプト）を自動実行するためのデーモンプロセスです。<br>
+                                    メールの自動配信はこのデーモンプロセスによってスケジュール管理します。<br>
+                                    ご利用のレンタルサーバー等ではcron（クーロン）が使用できない環境の場合、配信専用ページ等でスケジュール管理を代用してください。</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼設定ファイルの変更　(対象ファイル：「send.cgi」)</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">cronを利用できるように設定ファイルを編集します。<br>
+                                  <br>
+                                    <br>
+                                    ■send.cgi<br>
+                                    11行目　distributeディレクトリの絶対パス<br>
+                                    $myroot = '<span class="style1"><strong>../</strong></span>';<br>
+                                    <br>
+                                    ↓<br>
+                                    例： <br>
+                                    $myroot = '<span class="style1"><strong>/home/ホームディレクトリ/distribute/</strong></span>';<br>
+                                    <br>
+                                    <br>
+                                    <table border="0" cellpadding="1">
+                                      <tr>
+                                        <td bgcolor="#999999"><table border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                              <td bgcolor="#FFFFFF"><font color="#666666">★</font><font color="#666666">絶対パス<br>
+                                                <br>
+                                                サーバー上のフォルダパスのことです。絶対パスが分からない場合は 「 distribute 」<br>
+                                                ディレクトリ内の「 getpath.cgi 」を該当のファイルと同じ場所に置き、ブラウザから<br>
+                                                アクセスしてください。<br>
+                                                そのディレクトリの絶対パスが表示されます。 <br>
+                                                getppath.cgiの設置にはperlパスの変更が必要な場合があります。<br>
+                                              また、パーミッションは[ 705 ]</font> に変更してください。 </td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼CRONの設定</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">telnetなどのターミナルでサーバーに接続します。<br>
+                                    <br>
+                                    <strong>コマンド：</strong><br>
+                                    ■ 現在の設定を見る<br>
+                                    $&gt; <span class="white">crontab -l</span><br>
+                                    <br>
+                                    ■ 設定を変更する<br>
+                                    $&gt; <span class="white">crontab -e</span><br>
+                                    <br>
+                                    ■ 設定内容の削除<br>
+                                    $&gt; <span class="white">crontab -r</span><br>
+                                    <br>
+                                    <span class="style4"><font color="#990000">※「$&gt;」 はコマンドではありません。</font></span><br>
+                                    <br>
+                                    <strong>設定：</strong><br>
+                                    <font color="#990000">※設定する前と設定した後に内容を確認してください。</font><br>
+                                    <br>
+                                    $&gt; <span class="white">crontab -e</span><br>
+                                    <br>
+                                    このコマンドでエディタが開きますので、以下の書式を参考に<br>
+                                    スケジュールを設定してください。<br>
+                                    <br>
+                                    <br>
+                                    <strong>書式：</strong><br>
+                                    コマンド書式は，<strong>[分] [時] [日] [月] [曜日] [スクリプトの絶対パス]</strong><br>
+                                    分　：　01～59<br>
+                                    時　：　1～24<br>
+                                    日　：　1～31<br>
+                                    曜日：　0（日曜）～6（土曜）<br>
+                                    書式はスペースまたはタブで区切ります。<br>
+                                    <br>
+                                    例：<br>
+                                    <strong>0 12 * * * /home/user/public_html/distribute/cgi-bin/send.cgi</strong><br>
+                                    毎日、昼の12時にメール送信システムを実行します。<br>
+                                    <br>
+                                    クーロンデーモンの実行結果はメールで自分自身に知らされます。<br>
+                                    メールを送ってほしくない場合は、<br>
+                                    <strong>0 12 * * * /home/user/public_html/distribute/cgi-bin/send.cgi 1> /dev/null</strong><br>
+                                    としてください。この場合はエラーが起こった時だけ (標準エラー出力に出力があった時だけ)メールが送られてきます。</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="500" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#666666"><table width="500" border="0" cellspacing="1" cellpadding="5">
+                                <tr>
+                                  <td colspan="2" nowrap="nowrap" class="bgcolor2">▼送信制限のご注意</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" class="bgcolor3">送信方式設定が「分割で送信する」ではない場合、一度のアクセスによって配信されるメール件数は最大で「 200 」となっています。<br>
+                                    システム全体の登録人数（顧客など）が多い場合、一度のアクセスではすべてのメールが配信できない場合がありますが、その場合はcron（クーロン）のスケジュールを一日に数回アクセスするようにスケジュールに設定してください。</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+          </td>
+        </tr>
+      </table></td>
+    <td rowspan="2" background="images/bg2-r.gif"><img src="images/spacer01.gif" width="5" height="1" /></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#333333"><font color="#ffffff">Copyright (C) 2007 weblogic,inc. All Rights Reserved. </font></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,785 @@
+/* 
+--------------------------------------------------------------------------
+01. Rayout
+02. Header
+03. Section 01 [ACマスターカード情報]
+04. Section 02 [ACマスターカード 4つの特徴]
+05. Section 03 [最短即日の受け取り日数]
+06. Section 04 [カード発行までのステップ]
+07. Section 05 [アルバイト・パートでも申込みできる]
+08. Section 06 [ACマスターカード お申込みはこちら]
+10. footer
+11. Font
+--------------------------------------------------------------------------
+*/
+
+
+
+
+
+body {
+margin:0;
+padding:0;
+text-align:center;
+font-family: Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+background:url(../images/bg_body.gif) top left repeat-x;
+}
+
+
+
+
+
+/* 01. Rayout
+----------------------------------------------------------------------- */
+
+#header {
+width:960px;
+height:617px;
+text-align:left;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+background:url(../images/bg_header.png) top left repeat-x;
+}
+
+#header2 {
+width:960px;
+height:617px;
+text-align:left;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+background:url(../images/bg_header2.png) top left repeat-x;
+}
+
+
+#header3 {
+width:960px;
+height:617px;
+text-align:left;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+background:url(../images/bg_header3.png) top left repeat-x;
+}
+
+#container {
+width:960px;
+text-align:left;
+margin:0 auto;
+background:url(../images/bg_container.gif) top left repeat-y;
+}
+
+#footer {
+width:940px;
+text-align:left;
+margin:0 auto;
+padding:35px 0 0 0;
+background:url(../images/bg_footer.gif) bottom left repeat-x;
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+height: 0;
+visibility: hidden;
+}
+
+	.clearfix { min-height: 1px; }
+	
+	* html .clearfix {
+	height: 1px;
+	/*\*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+	}
+
+
+
+
+
+/* 02. Header
+----------------------------------------------------------------------- */
+
+#header .title {
+width:902px;
+height:354px;
+margin:0;
+padding:0;
+position:absolute;
+top:11px;
+left:40px;
+}
+
+#header .sub_title {
+width:414px;
+height:27px;
+margin:0;
+padding:0;
+position:absolute;
+top:227px;
+left:40px;
+}
+
+#header .ac_info_title {
+margin:0;
+padding:0;
+position:absolute;
+top:387px;
+left:400px;
+}
+
+#header ul.ac_info {
+margin:0;
+padding:0;
+position:absolute;
+list-style:none;
+overflow:hidden;
+top:461px;
+left:400px;
+}
+
+	#header ul.ac_info li {
+	margin:0;
+	padding:0 0 15px 0;
+	font-size:0;
+	line-height:0;
+	}
+
+#header .ac_info_txt {
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:570px;
+	left:125px;
+}
+
+
+
+#header2 .title {
+width:902px;
+height:354px;
+margin:0;
+padding:0;
+position:absolute;
+top:11px;
+left:40px;
+}
+
+#header2 .sub_title {
+width:414px;
+height:27px;
+margin:0;
+padding:0;
+position:absolute;
+top:227px;
+left:40px;
+}
+
+#header2 .ac_info_title {
+margin:0;
+padding:0;
+position:absolute;
+top:387px;
+left:400px;
+}
+
+#header2 ul.ac_info {
+margin:0;
+padding:0;
+position:absolute;
+list-style:none;
+overflow:hidden;
+top:461px;
+left:400px;
+}
+
+	#header2 ul.ac_info li {
+	margin:0;
+	padding:0 0 15px 0;
+	font-size:0;
+	line-height:0;
+	}
+
+#header2 .ac_info_txt {
+margin:0;
+padding:0;
+position:absolute;
+top:570px;
+left:85px;
+}
+
+
+#header3 .title {
+width:902px;
+height:354px;
+margin:0;
+padding:0;
+position:absolute;
+top:11px;
+left:40px;
+}
+
+#header3 .sub_title {
+width:414px;
+height:27px;
+margin:0;
+padding:0;
+position:absolute;
+top:227px;
+left:40px;
+}
+
+#header3 .ac_info_title {
+margin:0;
+padding:0;
+position:absolute;
+top:387px;
+left:400px;
+}
+
+#header3 ul.ac_info {
+margin:0;
+padding:0;
+position:absolute;
+list-style:none;
+overflow:hidden;
+top:461px;
+left:400px;
+}
+
+	#header3 ul.ac_info li {
+	margin:0;
+	padding:0 0 15px 0;
+	font-size:0;
+	line-height:0;
+	}
+
+#header3 .ac_info_txt {
+margin:0;
+padding:0;
+position:absolute;
+top:570px;
+left:85px;
+}
+
+
+
+
+
+/* 03. Section 01 [ACマスターカード情報]
+----------------------------------------------------------------------- */
+
+.section01 {
+width:940px;
+margin:0 auto;
+padding:75px 0 0 0;
+overflow:hidden;
+text-align:left;
+background:url(../images/bg_section_01.jpg) top left repeat-x;
+}
+
+.section01 .col_l {
+float:left;
+width:320px;
+margin:0 0 0 95px;
+padding:0 0 30px 0;
+}
+
+	.section01 .col_l table {
+	color:#333333;
+	background-color:#dcdcdc;
+	}
+	
+		.section01 .col_l table th {
+	font-size:12px;
+	border:1px solid #ffffff;
+	padding:5px;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:middle;
+	background-color:#efefef;
+	line-height:18px;
+	color:#333333;
+		}
+	
+		.section01 .col_l table td {
+	font-size:12px;
+	background:#ffffff;
+	color:#333333;
+	padding:5px;
+	text-align:left;
+	line-height:18px;
+	vertical-align:middle;
+	/*IE6*/
+		_layout-grid-line:0px;
+	_zoom:1;
+		}
+
+.section01 .col_r {
+float:left;
+width:450px;
+margin:0;
+padding:0 0 30px 0;
+}
+
+	.section01 .col_r .cardname {
+	font-size:24px;
+	font-weight:bold;
+	text-align:left;
+	line-height:55px;
+	letter-spacing:0.1em;
+	padding:0 0 5px 20px;
+	margin:0 0 10px 0;
+	background:url(../images/bg_section_01_cardname.jpg) top left repeat-x;
+	}
+	
+		.section01 .col_r .cardname a { color:#333333; text-decoration:underline; }
+		.section01 .col_r .cardname a:hover { color:#333333; text-decoration:none; }
+
+	.section01 .col_r p {
+	font-size:14px;
+	line-height:36px;
+	letter-spacing:0.2em;
+	color:#333333;
+	display:block;
+	border-bottom:1px dotted #dcdcdc;
+	background:url(../images/bg_txt_cardinfo.gif) top left repeat;
+	}
+
+.section01 .button {
+clear:left;
+width:940px;
+background:url(../images/bg_section_01b.gif) bottom left no-repeat;
+}
+
+.section01 .button .section {
+width:735px;
+margin:0 0 0 95px;
+padding:20px 0 74px 35px;
+text-align:center;
+overflow:hidden;
+background:url(../images/bg_section_01b_shadow.jpg) top left repeat-x;
+}
+
+	.section01 .button .section .shousai,
+	.section01 .button .section .omoushikomi {
+	float:left;
+	width:300px;
+	padding:0 0 10px 0;
+	margin:0 25px 0 25px;
+	}
+	
+	.section01 .button .section .shousai a,
+	.section01 .button .section .omoushikomi a {
+	width:300px;
+	display:block;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:bold;
+	line-height:60px;
+	text-decoration:underline;
+	}
+	
+	.section01 .button .section .shousai { background:url(../images/button_shousai_off.gif) top left repeat-y; }
+	.section01 .button .section .omoushikomi { background:url(../images/button_omoushikomi_off.gif) top left repeat-y; }
+	
+	.section01 .button .section .shousai a:hover { color:#ffffff; text-decoration:none; background:url(../images/button_shousai_on.gif) top left repeat-y; }
+	.section01 .button .section .omoushikomi a:hover { color:#ffffff; text-decoration:none; background:url(../images/button_omoushikomi_on.gif) top left repeat-y; }
+
+
+
+
+
+/* 04. Section 02 [ACマスターカード 4つの特徴]
+----------------------------------------------------------------------- */
+
+.section02 {
+width:940px;
+margin:0 auto;
+padding:0;
+overflow:hidden;
+text-align:left;
+background:url(../images/bg_section_02.gif) top left repeat-y;
+}
+
+.section02 ul {
+width:940px;
+margin:0;
+padding:5px 0 65px 0;
+list-style:none;
+background:url(../images/bg_section_02b.gif) bottom left repeat-x;
+}
+
+	.section02 ul li {
+	font-size:0;
+	line-height:0;
+	margin:0;
+	padding:2px 30px 7px 30px;
+	vertical-align:middle;
+	overflow:hidden;
+	background:url(../images/bg_list_section_02.gif) bottom left no-repeat;
+	}
+	
+	.section02 ul li img.number02 { float:left; margin:25px 0 0 0; }
+	.section02 ul li img.txt02 { float:left; margin:42px 0 0 15px; }
+	.section02 ul li img.stxt02 { float:right; margin:5px 0 0 0; }
+
+
+
+
+
+
+/* 05. Section 03 [最短即日の受け取り日数]
+----------------------------------------------------------------------- */
+
+.section03 {
+width:940px;
+margin:0 auto;
+padding:0;
+text-align:left;
+border-top:1px solid #ffffff;
+background:url(../images/bg_section_03.jpg) top left repeat-x;
+}
+
+.section03 .title03 { padding:37px 0 17px 62px; }
+
+.section03 .wrap_l { margin:0 0 0 56px; }
+.section03 .wrap_r { width:415px; margin:0; }
+
+.section03 .wrap_l,
+.section03 .wrap_r {
+float:left;
+width:415px;
+display:block;
+background:url(../images/info_section03_01.png) top center no-repeat;
+}
+
+	.section03 .wrap_l .site_name,
+	.section03 .wrap_r .site_name {
+	width:auto;
+	font-size:18px;
+	font-weight:bold;
+	line-height:48px;
+	letter-spacing:0.1em;
+	color:#333333;
+	margin:0;
+	padding:6px 0 0 60px;
+	}
+	
+	.section03 .wrap_l dl,
+	.section03 .wrap_r dl {
+	width:415px;
+	margin:0;
+	padding:0;
+	}
+	
+	.section03 .wrap_l dl dt,
+	.section03 .wrap_r dl dt {
+	width:auto;
+	font-size:0;
+	line-height:0;
+	margin:0;
+	padding:0 0 41px 16px;
+	}
+	
+	.section03 .wrap_l dl dd,
+	.section03 .wrap_r dl dd {
+	font-size:14px;
+	line-height:22px;
+	letter-spacing:0.1em;
+	color:#333333;
+	padding:0 40px 20px 40px;
+	margin:0 0 0 6px;
+	background:url(../images/info_section03_02.png) bottom left no-repeat;
+	}
+
+.section03 .sub_txt03 {
+clear:both;
+width:940px;
+margin:0 auto;
+padding:0 0 60px 0;
+text-align:left;
+background:url(../images/bg_section_03b.gif) bottom left repeat-x;
+}
+
+	.section03 .sub_txt03 p {
+	width:790px;
+	font-size:18px;
+	letter-spacing:0.1em;
+	line-height:30px;
+	color:#333333;
+	margin:0 0 0 75px;
+	padding:53px 0 0 0;
+	text-align:left;
+	background:url(../images/line_section_03.gif) top left repeat-x;
+	}
+
+
+
+
+
+/* 06. Section 04 [カード発行までのステップ]
+----------------------------------------------------------------------- */
+
+.section04 {
+width:940px;
+margin:0 auto;
+padding:0;
+text-align:left;
+border-top:1px solid #ffffff;
+background:url(../images/bg_section_04.jpg) top left repeat-x;
+}
+
+.section04 .title04 { padding:45px 0 17px 85px; }
+
+.section04 .sub_txt04 {
+clear:both;
+width:940px;
+margin:0 auto;
+padding:0 0 70px 0;
+text-align:left;
+background:url(../images/bg_section_04b.jpg) bottom left repeat-x;
+}
+
+	.section04 .sub_txt04 p {
+	width:770px;
+	font-size:18px;
+	letter-spacing:0.1em;
+	line-height:30px;
+	color:#333333;
+	margin:0 0 0 80px;
+	padding:0;
+	text-align:left;
+	}
+
+.section04 ul {
+width:940px;
+margin:0;
+padding:5px 0 120px 0;
+list-style:none;
+}
+
+	.section04 ul li {
+	height:120px;
+	font-size:0;
+	line-height:0;
+	margin:0;
+	padding:0 0 0 111px;
+	vertical-align:middle;
+	overflow:hidden;
+	}
+	
+	.section04 ul li img.number04 { float:left; margin:35px 0 0 0; }
+	.section04 ul li img.txt04 { float:left; margin:48px 0 0 20px; }
+	.section04 ul li img.txt04p { float:left; margin:0 0 0 20px; }
+
+
+
+
+
+
+/* 07. Section 05 [アルバイト・パートでも申込みできる]
+----------------------------------------------------------------------- */
+
+.section05 { padding:40px 0 40px 0; }
+
+.section05 dl {
+width:860px;
+margin:0 auto;
+padding:0;
+text-align:left;
+background:url(../images/bg_section_05.gif) top left repeat-y;
+}
+
+	.section05 dl dt {
+	margin:0;
+	padding:0;
+	}
+	
+	.section05 dl dd {
+	font-size:18px;
+	line-height:30px;
+	letter-spacing:0.1em;
+	color:#333333;
+	margin:0;
+	padding:20px 33px 30px 33px;
+	background:url(../images/bg_section_05b.gif) bottom left repeat-x;
+	}
+
+.section05 table {
+	color:#333333;
+	background-color:#dcdcdc;
+	}
+	
+		.section05 table th {
+	font-size:16px;
+	border:1px solid #ffffff;
+	padding:10px;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:middle;
+	background-color:#efefef;
+	line-height:18px;
+	color:#333333;
+		}
+	
+		.section05 table td {
+	font-size:16px;
+	background:#ffffff;
+	color:#333333;
+	padding:10px;
+	text-align:left;
+	line-height:22px;
+	vertical-align:middle;
+	/*IE6*/
+		_layout-grid-line:0px;
+	_zoom:1;
+		}
+
+
+
+/* 08. Section 06 [ACマスターカード お申込みはこちら]
+----------------------------------------------------------------------- */
+
+.section06 {
+width:auto;
+margin:0 10px 0 10px;
+padding:40px;
+text-align:left;
+background:url(../images/bg_section_06.jpg) top left repeat-x;
+}
+
+	.section06 a {
+	width:680px;
+	height:110px;
+	font-size:32px;
+	font-weight:bold;
+	color:#ffffff;
+	line-height:110px;
+	letter-spacing:0.1em;
+	text-indent:70px;
+	text-decoration:underline;
+	margin:0;
+	padding:0;
+	display:block;
+	}
+	
+	.section06 a:hover {
+	color:#ffffff;
+	text-decoration:none;
+	background:url(../images/bg_section_06_on.jpg) top left repeat-x;
+	}
+
+.section07 {
+	width:auto;
+	margin:0 10px 0 10px;
+	text-align:left;
+	background:url(../images/bg_section_07.png) top center no-repeat;
+}
+
+	.section07 a {
+	height:100px;
+	font-size:28px;
+	font-weight:bold;
+	color:#fff;
+	line-height:100px;
+	letter-spacing:0.1em;
+	text-indent:70px;
+	text-decoration:underline;
+	text-align:left;
+	margin:0 10px 0 10px;
+	padding-left:310px;
+	}
+	
+	.section07 a:hover {
+	color:#fff;
+	text-decoration:none;
+	text-align:left;
+	margin:0 10px 0 10px;
+	padding-left:310px;
+	}
+
+
+.section08 {
+	width:auto;
+	margin:0 10px 0 10px;
+	text-align:left;
+	background:url(../images/bg_section_08.png) top center no-repeat;
+}
+
+	.section08 a {
+	height:100px;
+	font-size:28px;
+	font-weight:bold;
+	color:#fff;
+	line-height:100px;
+	letter-spacing:0.1em;
+	text-indent:70px;
+	text-decoration:underline;
+	text-align:left;
+	margin:0 10px 0 10px;
+	padding-left:310px;
+	}
+	
+	.section08 a:hover {
+	color:#fff;
+	text-decoration:none;
+	text-align:left;
+	margin:0 10px 0 10px;
+	padding-left:310px;
+	}
+
+
+
+
+/* 10. footer
+----------------------------------------------------------------------- */
+
+#footer p {
+color:#ffffff;
+font-size:12px;
+line-height:69px;
+margin:0 0 0 40px;
+padding:6px 0 0 0;
+}
+
+	#footer p a {
+	color:#ffffff;
+	text-decoration:underline;
+	}
+
+	#footer p a:hover {
+	color:#ffffff;
+	text-decoration:none;
+	}
+
+
+
+
+
+/* 11. Font
+----------------------------------------------------------------------- */
+
+.alphaimg a:hover img {
+opacity:0.75;
+filter: alpha(opacity=75);
+-ms-filter: "alpha( opacity=75 )";
+}
+
+h2,h3,h4,h5 { font-size:12px; margin:0; padding:0; line-height:12px; font-weight:normal; }
+
+p { margin:0; padding:0; }
+
+br {
+font-size:14px;
+line-height:14px;
+margin:0;
+padding:0;
+}
+
+.clear { clear:both; }
+.u_space_20 { margin-bottom:20px; }
+img { border:0; }
