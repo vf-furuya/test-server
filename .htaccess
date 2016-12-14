@@ -1,0 +1,48 @@
+Options +Includes
+Options +ExecCGI
+
+
+
+
+AddHandler server-parsed .html .xhtml .shtml
+
+
+
+# <IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.cashing-ex.net
+RewriteRule ^(.*)$ http://cashing-ex.net/$1 [R=301,L]
+
+
+
+RewriteRule ^index.html([&]?)([^&]*)$ index.php?%{QUERY_STRING}
+RewriteRule ^information.html([&]?)([^&]*)$ index.php?html=information&%{QUERY_STRING}
+RewriteRule ^mokuteki.html([&]?)([^&]*)$ index.php?html=mokuteki&%{QUERY_STRING}
+RewriteRule ^sitemap.html([&]?)([^&]*)$ index.php?html=sitemap&%{QUERY_STRING}
+RewriteRule ^about.html([&]?)([^&]*)$ index.php?html=about&%{QUERY_STRING}
+
+
+
+RewriteRule ^category/([^/]*).html([&]?)([^&]*)$ category/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^contents/([^/]*).html([&]?)([^&]*)$ contents/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^column/([^/]*).html([&]?)([^&]*)$ column/index.php?html=$1&%{QUERY_STRING}
+
+
+
+RewriteRule ^search_result/([^/]*).html([&]?)([^&]*)$ search_result/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^speedcashing_check/([^/]*).html([&]?)([^&]*)$ speedcashing_check/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^simulation/index.html([&]?)([^&]*)$ simulation/csvindex.php?%{QUERY_STRING}
+
+
+
+RewriteRule ^sp/([^/]*).html([&]?)([^&]*)$ sp/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^sp/result/([^/]*).html([&]?)([^&]*)$ sp/result/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^sp/site/([^/]*).html([&]?)([^&]*)$ sp/site/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^sp/mokuteki/([^/]*).html([&]?)([^&]*)$ sp/mokuteki/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^sp/card/([^/]*).html([&]?)([^&]*)$ sp/card/index.php?html=$1&%{QUERY_STRING}
+RewriteRule ^sp/column/([^/]*).html([&]?)([^&]*)$ sp/column/index.php?html=$1&%{QUERY_STRING}
+

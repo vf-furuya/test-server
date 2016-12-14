@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<script type="text/javascript" src="/js/bunner.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" charset="utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="description" content="キャッシングEXは今日中に借入れできる銀行系・消費者金融系キャッシングを比較、検索できるサイトです。" />
+<meta name="keywords" content="キャッシングEX,即日融資,スピードキャッシング " />
+<title>即日融資の検索なら | キャッシングEX</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="/search_result/data/check.php"  charset="UTF-8"></script>
+</head>
+
+<body id="pagetop">
+<!--#include virtual="/header.html" -->
+<div class="refine_search_index">
+  <h2 class="tt_refine_search"><img src="/images/tt_refine_search_index.png" alt="EX絞り込み検索" width="375" height="51"></h2>
+<p class="st_refine_search"><img src="/images/st_refine_search_index.png" alt="条件にチェックを入れて、あなたの目的にあったキャッシング会社の" width="457" height="33"></p>
+<form method="get" action="search_result/" class="refine_search" name="fms">
+<div class="check-group">
+<ul class="refine_button_index">
+<li class="ginkoukei"><input id="refine-top-1" type="checkbox" name="refine-top" value="refine-top-1" /><label for="refine-top-1"><img src="/images/refine_txt_01.png" alt="銀行系カードローン検索" width="360" height="35" id="linkurl1" ></label></li>
+<li class="sokujitsu"><input id="refine-top-2" type="checkbox" name="refine-top" value="refine-top-2" /><label for="refine-top-2"><img src="/images/refine_txt_02.png" alt="即日融資ローン検索" width="302" height="35" id="linkurl2" ></label></li>
+<li class="omatome"><input id="refine-top-3" type="checkbox" name="refine-top" value="refine-top-3" /><label for="refine-top-3"><img src="/images/refine_txt_03.png" alt="おまとめローン検索" width="295" height="33" id="linkurl3" ></label></li>
+<li class="smartphone"><input id="refine-top-4" type="checkbox" name="refine-top" value="refine-top-4" /><label for="refine-top-4"><img src="/images/refine_txt_04.png" alt="スマホ対応ローン検索" width="337" height="34" id="linkurl4" ></label></li>
+</ul>
+</div>
+<table width="956" border="0" cellpadding="0" cellspacing="0" bgcolor="#f5cece" class="system_table_sp">
+<tr>
+<th>目的別 </th>
+<td width="830">
+<div class="check-group sp_red"><table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="mokuteki-1" type="checkbox" name="mokuteki" value="m1" /><label for="mokuteki-1">消費者金融<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="mokuteki-2" type="checkbox" name="mokuteki" value="m2" /><label for="mokuteki-2">お試し審査<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="mokuteki-3" type="checkbox" name="mokuteki" value="m3" /><label for="mokuteki-3">一定期間無利息<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="mokuteki-4" type="checkbox" name="mokuteki" value="m4" /><label for="mokuteki-4">総量規制外<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="mokuteki-5" type="checkbox" name="mokuteki" value="m5" /><label for="mokuteki-5">限度額が大きい<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+</table>
+<table width="956" border="0" cellpadding="0" cellspacing="0" class="system_table">
+<tr bgcolor="#eaeaea">
+<th>審査時間</th>
+<td width="830">
+<div class="radio-group"><table width="815" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="shinsa-1" type="radio" class="radio" name="shinsa" value="s1" /><label for="shinsa-1" id="lbl_s1">自動審査（3秒）<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="shinsa-2" type="radio" class="radio" name="shinsa" value="s2" /><label for="shinsa-2" id="lbl_s2">30分以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="shinsa-3" type="radio" class="radio" name="shinsa" value="s3" /><label for="shinsa-3" id="lbl_s3">1時間以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="shinsa-4" type="radio" class="radio" name="shinsa" value="s4" /><label for="shinsa-4" id="lbl_s4">3時間以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="shinsa-5" type="radio" class="radio" name="shinsa" value="s5" /><label for="shinsa-5" id="lbl_s5">当日中<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+</table>
+<div id="moreInfo" style="display: none;">
+<table width="956" border="0" cellpadding="0" cellspacing="0" class="system_table">
+<tr bgcolor="#f1f1f1">
+<th>限度額</th>
+<td width="830">
+<div class="radio-group"><table width="815" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="gendo-1" type="radio" class="radio" name="gendo" value="g1" /><label for="gendo-1" id="lbl_g1">30万以上<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="gendo-2" type="radio" class="radio" name="gendo" value="g2" /><label for="gendo-2" id="lbl_g2">100万以上<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="gendo-3" type="radio" class="radio" name="gendo" value="g3" /><label for="gendo-3" id="lbl_g3">300万以上<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="gendo-4" type="radio" class="radio" name="gendo" value="g4" /><label for="gendo-4" id="lbl_g4">500万以上<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="gendo-5" type="radio" class="radio" name="gendo" value="g5" /><label for="gendo-5" id="lbl_g5">800万以上<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr bgcolor="#eaeaea">
+<th>金利</th>
+<td width="830">
+<div class="radio-group"><table width="815" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="kinri-1" type="radio" class="radio" name="kinri" value="k1" /><label for="kinri-1" id="lbl_k1">4％以下<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kinri-2" type="radio" class="radio" name="kinri" value="k2" /><label for="kinri-2" id="lbl_k2">5％以下<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kinri-3" type="radio" class="radio" name="kinri" value="k3" /><label for="kinri-3" id="lbl_k3">6％以下<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kinri-4" type="radio" class="radio" name="kinri" value="k4" /><label for="kinri-4" id="lbl_k4">7％以下<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kinri-5" type="radio" class="radio" name="kinri" value="k5" /><label for="kinri-5" id="lbl_k5">8％以下<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr bgcolor="#f1f1f1">
+<th>融資までの<br>目安</th>
+<td width="830">
+<div class="radio-group"><table width="615" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="meyasu-1" type="radio" class="radio" name="meyasu" value="m1" /><label for="meyasu-1" id="lbl_m1">1時間以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="meyasu-2" type="radio" class="radio" name="meyasu" value="m2" /><label for="meyasu-2" id="lbl_m2">3時間以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="meyasu-3" type="radio" class="radio" name="meyasu" value="m3" /><label for="meyasu-3" id="lbl_m3">当日中<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="meyasu-4" type="radio" class="radio" name="meyasu" value="m4" /><label for="meyasu-4" id="lbl_m4">1週間以内<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr bgcolor="#eaeaea">
+<th>こだわり</th>
+<td width="830">
+<div class="check-group"><table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="kodawari-1" type="checkbox" name="kodawari" value="kd1" /><label for="kodawari-1">学生・主婦OK<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kodawari-2" type="checkbox" name="kodawari" value="kd2" /><label for="kodawari-2">来店不要<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kodawari-3" type="checkbox" name="kodawari" value="kd3" /><label for="kodawari-3">自動審査<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kodawari-4" type="checkbox" name="kodawari" value="kd4" /><label for="kodawari-4">保証人不要<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kodawari-5" type="checkbox" name="kodawari" value="kd5" /><label for="kodawari-5">土日祝日可<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr bgcolor="#f1f1f1">
+<th>利用可能<br>コンビニ</th>
+<td width="830">
+<div class="check-group convenience"><table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="conveni-1" type="checkbox" name="conveni" value="cv1" /><label for="conveni-1"><img src="/images/convenience_icon_seven.jpg" alt="セブンイレブン" width="27" height="26"><span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="conveni-2" type="checkbox" name="conveni" value="cv2" /><label for="conveni-2"><img src="/images/convenience_icon_famima.jpg" alt="ファミリーマート" width="63" height="26"><span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="conveni-3" type="checkbox" name="conveni" value="cv3" /><label for="conveni-3"><img src="/images/convenience_icon_lawson.jpg" alt="ローソン" width="26" height="26"><span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="conveni-4" type="checkbox" name="conveni" value="cv4" /><label for="conveni-4"><img src="/images/convenience_icon_thanks.jpg" alt="サンクス" width="35" height="26"><span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr bgcolor="#eaeaea">
+<th>金融機関</th>
+<td width="830">
+<div class="radio-group"><table width="324" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><input id="kikan-1" type="radio" class="radio" name="kikan" value="kk1" /><label for="kikan-1" id="lbl_kk1">銀行系<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+<td><input id="kikan-2" type="radio" class="radio" name="kikan" value="kk2" /><label for="kikan-2" id="lbl_kk2">非銀行系<span><img src="/images/check_s.png" alt="demo" width="39" height="36"></span></label></td>
+</tr>
+</table></div>
+</td>
+</tr>
+</table>
+</div>
+<p id="openArea">&gt; 条件を更に追加</p>
+<div class="submit_area"><input type="image" src="images/refine_search_submit.jpg" alt="絞り込み検索"></div>
+</form>
+<!-- /div.refine_search --></div>
+
+<div id="container">
+<div class="main_area">
+  <!--#include virtual="/top_rank.html" -->
+  <div class="column_area">
+<h3><img src="/images/tt_column_area.jpg" alt="EXコラム"></h3>
+<div class="col_column">
+<ul>
+<li class="ninki"><a href="/column/001.html">収入証明が不要なカードローンとは？</a></li>
+<li class="teiban"><a href="/column/002.html">クレジットカードで審査に落ちた方</a></li>
+<li class="teiban"><a href="/column/003.html">即日融資って本当に今日借りれるの？</a></li>
+<li class="teiban"><a href="/column/004.html">総量規制対象外のカードローンって？</a></li>
+<li class="teiban"><a href="/column/005.html">キャッシングに必要な書類ってなに？</a></li>
+</ul>
+<div class="col_column_r"><a href="/column"><img src="/images/button_column_off.jpg" alt="コラム一覧" width="160" height="50" border="0"></a></div>
+</div>
+</div>
+<h3 class="tt">目的別で選ぶ</h3>
+<!--#include virtual="/category_menu.html" -->
+<!-- /div.main_area --></div>
+<!--#include virtual="/sidemenu_top.html" -->
+<div class="page_scroll"><a href="#pagetop"><img src="/images/pagescroll_off.gif" alt="ページの先頭へ" width="130" height="30" border="0"></a></div>
+<!-- /div.container --></div>
+
+<!--#include virtual="/footer.html" -->
+
+</body>
+</html>
